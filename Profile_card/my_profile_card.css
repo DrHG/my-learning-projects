@@ -1,0 +1,99 @@
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('http://i.imgur.com/9kh3G8L.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Courier New", sans-serif, serif;
+  font-weight: bold;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 18px;
+}
+li {
+  display: inline;
+}
+.profile-card {
+  width: 520px;
+  max-width: calc(100vw - 10px);
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 3px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+.profile-head {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.profile-photo {
+  position: relative;
+  border-radius: 50%;
+  margin-top: -40px;
+  background-color: rgba(64, 64, 64, 0.2);
+}
+.placeholder {
+  transition: 2s ease;
+}
+.overlay {
+  position: absolute;
+  
+  top: 5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 2s ease;
+}
+.profile-photo:hover .overlay {
+  opacity: 1;
+}
+.profile-photo:hover .placeholder {
+  opacity: 0;
+}
+.profile-data {
+  margin-top: 10px;
+}
+.about {
+  margin: 10px auto 5px auto;
+  max-width: 90%;
+  text-align: justify;
+}
+.cont-er {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.links {
+  margin: 5px auto;
+  width: 80px;
+}
+.edu, .links, .ref {
+  padding: 5px;
+  border: 2px solid gray;
+  color: rgba(64, 64, 64, 0.8);
+  text-align: center;
+}
+.edu, .ref {
+  width: 180px;
+  margin: 5px 10px;
+  background-color: hsla(0, 0%, 100%, .2);
+}
+.cont-h {
+  margin-bottom: 5px;
+  text-align: left;
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.centraspa {
+  font-size: 14px;
+}
