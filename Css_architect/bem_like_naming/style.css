@@ -1,0 +1,73 @@
+body {
+  background-color:     black;
+  color:                yellow;
+  margin:                 0;
+  font-family:           'Noto Sans', sans-serif;
+}
+
+.navbar {
+  background-color: lightgrey;
+  overflow:           hidden;
+  text-align:         center;
+}
+
+.nav_btn {
+  float:              left;
+  padding:            28px 32px;
+  font-size:          17px;
+}
+
+  .nav_btn--menu {
+    background-color: orange;
+    color:            #f2f2f2;
+  }
+
+  .nav_btn--info {
+    background-color: #f2f2f2;
+    color:            blue;
+  }
+
+  .nav_btn--logout {
+    float: right;
+    background-color: red;
+    color:            black;
+  }
+
+  .nav_btn--right {
+    float:            right;
+  }
+
+  .nav_btn--bold {
+    font-weight:      bold;
+  }
+
+
+
+
+  .main-title {
+    display:              block;
+    margin:               0.67em 0 0.67em 0;
+    font-weight:          bold;
+    font-size:            2em;
+  }
+
+    .main-title--styl {
+      font-size: 50px;
+      font-family: Raleway, sans-serif;
+      text-align: center;
+    }
+
+  .text {
+    width: 90%;
+    margin: 4rem auto;
+  }
+
+    .text--highlighted {
+      font-size: 1.7rem;
+      letter-spacing: 2px;
+    }
+
+    .text--small {
+      font-size: 8px;
+      text-transform: uppercase;
+    }
