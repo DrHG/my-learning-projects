@@ -1,0 +1,140 @@
+/**
+ * OVERVIEW
+ *
+ * This project is separated to the following style sheets:
+ *
+ * reset.css............CSS reset.
+ * base.css.............Global rules and helpers.
+ * layout.css...........CSS rules that control the layout of the page.
+ * components.css.......Own CSS for the components that build up the page.
+ */
+
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Variables............Globally-available variables.
+ * Box-sizing...........Better default `box-sizing`.
+ * Margins..............Top and bottom margins global values.
+ *
+ * BASE STYLES
+ * Headings.............H1-H2 styles.
+ * Base font............Base font style.
+ * 
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+  --background-primary:           brown;
+  --background-secondary:         cornflowerblue;
+  --background-tertiary:          coral;
+  --background-quarterly:         darkgreen;
+  --background-fifth:             chartreuse;
+  --bg-alert:                     white;
+  --primary-font-color:           black;
+  --secondary-font-color:         white;
+  --border-primary:               hsla(0,0%,100%,.2);
+  --hover-primary:                hsl(0, 0%, 77%);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #MARGINS, PADDINGS
+\*------------------------------------*/
+
+.container {
+  padding:        1rem;
+}
+
+
+header, footer {
+  padding:        5px;
+  margin-top:     .1em;
+  margin-bottom:  .1em;
+}
+
+
+nav {
+  padding: 1rem;
+}
+
+
+nav a {
+  padding:        .5rem 1rem;
+}
+
+
+.nav__sign-up {
+  margin: 0 auto;  /*To center in mobile view if there is a max-with*/
+}
+
+
+.main-content {
+  padding:        1rem;
+}
+
+
+section {
+  padding:        3px;
+  margin-top:     .5em;
+  margin-bottom:  .5em;
+}
+
+
+.media-object {
+  padding:         5px 10px;
+  margin-bottom:  .1em;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
+
+h1 { font-size: clamp(18px, 5vw, 50px); }
+
+h2 { font-size: clamp(15px, 4vw, 30px); }
+
+h1, h2 { margin: min(5vh, 2rem) 0 1.05rem; }
+
+
+
+
+
+/*------------------------------------*\
+  #BASE FONT
+\*------------------------------------*/
+
+html {
+  font-size:   min(3.2vw, 16px);
+  font-family: "Lucida Console", Monaco, monospace;
+  color:       var(--primary-font-color);
+}

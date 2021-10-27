@@ -1,0 +1,113 @@
+/**
+ * CONTENTS
+ *
+ * LAYOUT
+ * Elements.............Rules for the container and items
+ * Modifiers............Media queries for the layout.
+ *
+ * WHITESPACES
+ * Whitespaces..........Whitespaces between items.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:minmax(60px, auto) minmax(60px, auto) 1fr minmax(60px, auto);
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer"
+}
+
+
+header {
+  grid-area: header;
+}
+
+
+nav {
+  grid-area: nav;
+} 
+
+
+.main-content {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  grid-area:  footer;
+  place-self: center strech;
+}
+
+section {
+  flex: 100%;
+} 
+
+
+
+
+
+/*------------------------------------*\
+  #MODIFIERS
+\*------------------------------------*/
+
+@media (min-width: 762px) {
+  .main-content {
+    flex-direction: row;
+    flex-wrap: wrap;    
+  }
+  section {
+    flex: 50%
+  }
+  .announcements {
+    flex: 100%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .main-content {
+    flex-direction: row;
+    flex-wrap: wrap;    
+  }
+  section {
+    flex: 33%
+  }
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #WHITESPACES
+\*------------------------------------*/
+
+.container {
+  gap: .7em;
+}
+
+@media (min-width: 762px) {
+  .container {
+    gap: 1.2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    gap: 2.3em;
+  }
+}

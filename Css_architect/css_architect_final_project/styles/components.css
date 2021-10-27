@@ -1,0 +1,118 @@
+/**
+* CONTENTS
+*
+* CONTAINER
+*
+* HEADER
+*
+* NAVIGATION
+*
+* MAIN CONTENT
+*
+* SECTIONS
+*
+* MEDIA-OBJECTS
+*
+* FOOTER
+*/
+
+
+
+
+/*------------------------------------*\
+#CONTAINER
+\*------------------------------------*/
+
+.container {
+  background-color: var(--background-fifth);
+}
+
+
+
+
+
+/*------------------------------------*\
+#HEADER
+\*------------------------------------*/
+
+.main-header--styl {
+  background-color: var(--background-primary);
+}
+
+
+
+
+
+/*------------------------------------*\
+#NAVIGATION
+\*------------------------------------*/
+
+.main-nav {
+  background-color: var(--background-secondary);
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  color: var(--secondary-font-color);
+}
+
+nav a:hover {
+  color: var(--hover-primary);
+  transition: color .15s ease-in-out;
+}
+
+.nav__sign-up {
+    border: 1px solid var(--border-primary);
+    border-radius: 9999px;
+    max-width: 300px;
+  }
+.nav__sign-up:hover {
+  color: var(--primary-font-color);
+  background-color: var(--bg-alert);
+  transition: background-color .15s ease-in-out;
+}  
+
+@media (min-width: 768px) {
+
+  nav a {
+    float: right;
+  }
+
+  .home {
+    float: left;
+  }
+ /* Clearfix */
+  nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+#MAIN CONTENT
+\*------------------------------------*/
+
+.main-content {
+  background-color: var(--background-tertiary);
+}
+
+
+
+
+
+/*------------------------------------*\
+#FOOTER
+\*------------------------------------*/
+
+footer {
+  background-color: var(--background-quarterly);
+  text-align:  center;
+}
